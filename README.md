@@ -1,3 +1,4 @@
-# Problem Solved
+#Problem Solving
 
-+BOJ 문제 해결 코드를 올립니다.
+##Introduce 
+*BOJ에서 푼 문제 코드 업로드
