@@ -8,5 +8,5 @@ function solution(n) {
         }
     }
     
-    return nSqrt > Math.floor(nSqrt)? cnt*2 : cnt*2-1;
+    return Number.isInteger(nSqrt)? cnt*2-1 : cnt*2;
 }
