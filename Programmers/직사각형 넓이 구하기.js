@@ -1,3 +1,13 @@
 function solution(dots) {
-    return Math.abs(dots[1][0]-dots[0][0])*Math.abs(dots[2][1]-dots[1][1]);
+    const [dot, ...restDots] = dots;
+    const [a,b] = dot;
+    let width = 0;
+    let height = 0;
+    restDots.forEach(([x,y])=>{
+        if(a === x || b === y){
+            width = Math.max(width, Math.abs(a-x));
+            height = Math.max(height, Math.abs(b-y));
+        }
+    })
+    return width*height
 }
